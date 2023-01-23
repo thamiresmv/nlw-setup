@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #09090a;
+  background-color: #0e0e0f;
   color: white;
 
   height: 100vh;
@@ -20,13 +20,15 @@ header {
 
   position: fixed;
   width: 100%;
-  background-color: #09090a;
+  background: rgb(20,20,22);
+background: linear-gradient(180deg, rgba(20,20,22,1) 0%, rgba(14,14,15,1) 100%, rgba(14,14,15,1) 100%);
+
 }
 
 button {
   padding: 16px 24px;
-  border-radius: 8px;
-  border: 1px solid #8b5cf6;
+  border-radius: 10px;
+  border: 1px solid #B8191E;
   background-color: transparent;
   color: white;
 
@@ -57,8 +59,8 @@ button {
 }
 
 .habit {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   font-size: 32px;
   display: flex;
   align-items: center;
@@ -67,7 +69,7 @@ button {
 
 .days {
   display: flex;
-  gap: 48px;
+  gap: 30px;
   margin-left: 32px;
 
   display: flex;
@@ -83,7 +85,7 @@ button {
   margin-bottom: 8px;
 
   font-family: "Roboto Mono";
-  font-size: 20px;
+  font-size: 16px;
   line-height: 125%;
 
   color: #a1a1aa;
@@ -95,8 +97,8 @@ input {
   appearance: none;
   -webkit-appearance: none;
 
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
 
   border: 2px solid #27272a;
   border-radius: 8px;
@@ -105,12 +107,21 @@ input {
 
 /*pseudo-selector*/
 input:checked {
-  background: #8b5cf6;
-  border: 2px solid #a78bfa;
+  background: #B8191E;
+  border: 2px solid #C82127;
 }
 
 @media (max-width: 570px) {
   button div {
     display: none;
   }
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 60px;
+    font-family: "Inter";
+  color: #cecece
+  
 }
